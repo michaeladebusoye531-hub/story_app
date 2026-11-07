@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorySpace - Read and Share Stories</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">StorySpace</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#stories">Stories</a>
+            <a href="#about">About</a>
+            <a href="#publish" class="nav-button">Write a Story</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p class="welcome">WELCOME TO STORYSPACE</p>
+
+        <h1>Every story has a <span>beginning.</span></h1>
+
+        <p class="intro">
+            Discover amazing stories, explore new worlds,
+            and share your own imagination with readers everywhere.
+        </p>
+
+        <a href="#stories" class="button">Explore Stories</a>
+        <a href="#publish" class="button secondary">Share Your Story</a>
+    </section>
+
+    <section class="stories" id="stories">
+        <h2>Discover Stories</h2>
+        <p class="section-text">
+            Find your next favourite story.
+        </p>
+
+        <div class="story-container">
+
+            <div class="story-card">
+                <div class="story-image romance">❤️</div>
+                <p class="category">Romance</p>
+                <h3>A Love Beyond Words</h3>
+                <p>
+                    Two strangers meet by chance and discover
+                    a connection they never expected.
+                </p>
+                <p class="author">By Grace</p>
+                <a href="#publish">Read story →</a>
+            </div>
+
+            <div class="story-card">
+                <div class="story-image adventure">🌍</div>
+                <p class="category">Adventure</p>
+                <h3>The Hidden Treasure</h3>
+                <p>
+                    A young explorer discovers an old map
+                    that leads to a mysterious treasure.
+                </p>
+                <p class="author">By Michael</p>
+                <a href="#publish">Read story →</a>
+            </div>
+
+            <div class="story-card">
+                <div class="story-image fantasy">✨</div>
+                <p class="category">Fantasy</p>
+                <h3>The Magic Kingdom</h3>
+                <p>
+                    In a kingdom filled with magic, one
+                    ordinary girl discovers her special power.
+                </p>
+                <p class="author">By Sarah</p>
+                <a href="#publish">Read story →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="publish" id="publish">
+        <h2>Have a Story to Tell?</h2>
+        <p>
+            Your imagination deserves a place in the world.
+            Get ready to share your story with others.
+        </p>
+        <a href="mailto:stories@example.com" class="button">
+            Start Writing
+        </a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About StorySpace</h2>
+        <p>
+            StorySpace is a place for readers and writers
+            to discover stories, share ideas, and inspire
+            one another through the power of storytelling.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 StorySpace. Every story matters.</p>
+    </footer>
+
+</body>
+</html>

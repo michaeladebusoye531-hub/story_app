@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8ff;
+    color: #29233d;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: white;
+}
+
+.logo {
+    color: #7048c6;
+    font-size: 27px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #29233d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: #7048c6;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #eee6ff, #f9edff);
+}
+
+.welcome {
+    color: #7048c6;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #7048c6;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #655d74;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: #7048c6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.secondary {
+    background-color: white;
+    color: #7048c6;
+    border: 1px solid #7048c6;
+}
+
+.stories {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.stories h2,
+.about h2,
+.publish h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #777084;
+    margin-bottom: 35px;
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.story-card {
+    background-color: white;
+    border: 1px solid #eee8f6;
+    border-radius: 14px;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+.story-image {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.romance {
+    background-color: #ffe4ee;
+}
+
+.adventure {
+    background-color: #dff3e9;
+}
+
+.fantasy {
+    background-color: #e9e1ff;
+}
+
+.category {
+    color: #7048c6;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.story-card h3 {
+    margin: 8px 0;
+}
+
+.story-card p {
+    margin-bottom: 10px;
+}
+
+.author {
+    color: #777084;
+    font-size: 14px;
+}
+
+.story-card a {
+    color: #7048c6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publish {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #eee6ff;
+}
+
+.publish p,
+.about p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer {
+    background-color: #29233d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 18px;
+    }
+
+    .story-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stories h2,
+    .about h2,
+    .publish h2 {
+        font-size: 27px;
+    }
+}
